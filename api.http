@@ -1,0 +1,49 @@
+### Mise à jour valide (meilleure enchère 3800 + pas 100)
+
+POST http://localhost:3000/api/annonces/a1f4c2d0-0001-4b6e-9c11-000000000001/encheres
+Content-Type: application/json
+
+{
+  "pseudo": "russell",
+  "montant": 3900
+}
+
+### Montant refusé : égal à la meilleure enchère
+
+POST http://localhost:3000/api/annonces/a1f4c2d0-0001-4b6e-9c11-000000000001/encheres
+Content-Type: application/json
+
+{
+  "pseudo": "russell",
+  "montant": 3800
+}
+
+### Montant refusé : pas d'enchère non respecté
+
+POST http://localhost:3000/api/annonces/a1f4c2d0-0001-4b6e-9c11-000000000001/encheres
+Content-Type: application/json
+
+{
+  "pseudo": "russell",
+  "montant": 3850
+}
+
+### Annonce terminée
+
+POST http://localhost:3000/api/annonces/a1f4c2d0-0004-4b6e-9c11-000000000004/encheres
+Content-Type: application/json
+
+{
+  "pseudo": "russell",
+  "montant": 1200
+}
+
+### Annonce inexistante
+
+POST http://localhost:3000/api/annonces/zzz/encheres
+Content-Type: application/json
+
+{
+  "pseudo": "russell",
+  "montant": 100
+}
