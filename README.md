@@ -1,6 +1,6 @@
 # Enchères en ligne — Nuxt 4 / Vue 3
 
-Plateforme d'enchères full-stack développée avec Nuxt 4 et Vue 3. Le projet couvre l'API REST, la logique métier de validation des offres et l'interface de consultation et de mise à l'enchère.
+Plateforme d'enchères full-stack développée avec Nuxt 4 et Vue 3. Projet personnel : l'objectif est de couvrir l'API REST, la logique métier de validation des offres et l'interface de consultation et de mise à l'enchère.
 
 ## Stack
 
